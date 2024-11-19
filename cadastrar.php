@@ -26,9 +26,9 @@
                 conecta();
                 $res = inserirUser($email, md5($senha));
                 if($res)
-                    alerta("Inserido com sucesso!");
+                    alerta("Usuário inserido com sucesso!");
                 else 
-                    alerta("Erro ao inserir!");
+                    alerta("Erro ao inserir usuário!");
                 redirect("index.php");
                 fecha();
                 exit();
